@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <title>Heather Dinh's Website</title>
+    <link rel="stylesheet" href="myWebsiteCSS.css">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Kaushan+Script&display=swap" rel="stylesheet">
+</head>
+    
+<body>
+    <nav>
+         <ul class="topnav" id="dropdownClick">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="dropdown"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
+             <!--by putting the href to this, the path going to (url) is undefined so now you have to stay there-->
+        </ul>
+    </nav>
+    
+    <div class="container" id="gradient">
+        <div class="row">
+            <!--even split here down the middle for two sized-->
+            <div class="col-7">
+                <div class="left-col">
+                    <!--created this class to move just the h1 and content, not the whole column-->
+                    <h1 class="large">Heather Dinh</h1>
+                    <h1 class="large">An awesome look into my life</h1>
+                </div>
+            </div>
+            
+            <div class="col-5">
+                <div class="right-col">
+                    <div class="video-container">
+                        <iframe width="400" height="225" src="https://www.youtube.com/embed/4eUrrxbp5zw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <script>
+        function dropdownMenu() {
+            var x = document.getElementById("dropdownClick");
+            
+            if(x.className == "topnav") {
+                x.className += " responsive";
+                /*changing topnave to topnav.responsive, so basically it creates a new class with all the same properties only when musical*/   
+            }else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+    
+</body>
+</html>
