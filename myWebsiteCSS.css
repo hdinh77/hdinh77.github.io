@@ -7,6 +7,7 @@ nav, header, footer {
 body {
     line-height: 1;
     margin: 0;
+    font-family: Inconsolata;
 }
 
 .container {
@@ -81,6 +82,10 @@ body {
     width: 100%;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 /*---------------------Nav Bar-----------------------*/
 
 nav {
@@ -133,6 +138,7 @@ h1.large {
     line-height: 50px;
 }
 
+/*First container*/
 
 div.left-col {
     margin-left: 10%;
@@ -142,6 +148,80 @@ div.left-col {
 div.right-col {
     margin-left: 0;
 }
+
+/*Second container*/
+
+h1.section2Header {
+    font-size: 35px;
+    text-align: center;
+}
+
+.col-4 {
+    text-align: center;
+    padding: 30px;
+}
+
+div.left-float-col, div.mid-float-col, div.right-float-col {
+    background-color: white;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 3px 0 rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+div.icon {
+    width: 100%;
+}
+
+label {
+    font-size: 20px;
+    font-weight: 1000;
+}
+
+p.col-4 {
+    font-size: 28px;
+    line-height: 1.2px;
+}
+
+button.learnMore {
+    display: block;
+    margin: auto;
+    font-size: 20px;
+    background-color: black;
+    color: #14c6f2;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+button.learnMore:hover {
+    background-color: mediumpurple;
+    color: white;
+}
+
+/*--------------------------Footer--------------------------*/
+footer.foot {
+    background-color: #666;
+    padding-left: 10%;
+}
+
+footer.foot h1 {
+    color: white;
+    font-size: 20px;
+}
+
+footer.foot ul {
+    list-style: none;
+    text-align: left;
+    padding: 0px;
+}
+
+footer.foot ul li {
+    font-size: 15px;
+    color: white;
+    line-height: 1.5;
+}
+
+
+
 
 /*---------------------Mobile------------------------*/
 /*this detects the screen of mobile, max width to tell its width to break and start applying the mobile elements*/
@@ -183,14 +263,21 @@ div.right-col {
     
     /*change it so that when you are in mobile mode, there aren't two columns next to eachother but stacking over one another, change the col widths*/
     
-    .col-7 {
+    .col-7, .col-4, col-5 {
         width: 100%;
         margin: 0;
+        overflow: hidden;
     }
     
-    .col-5 {
-        width: 100%;
-        overflow: hidden;
+    div.mobileStack {
+        width: 50%;
+        display: block;
+    }
+    
+    
+    div.left-float-col, div.mid-float-col, div.right-float-col {
+        padding: 5px;
+        display: block;
     }
     
     
@@ -208,7 +295,5 @@ div.right-col {
     }
     
 }
-
-
 
 
