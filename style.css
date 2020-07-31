@@ -1,0 +1,158 @@
+/*style.css Heather Dinh*/
+
+/*General styling*/
+body {
+    font-family: Roboto;
+    margin: 0;
+    background: gray;
+}
+
+.container {
+    max-width: 1200px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 3rem;
+}
+
+@media screen and (max-width: 580px) {
+    .container {
+        padding: 0 2rem;
+    }
+}
+
+h1, h2, h3 {
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 8px;
+
+}
+
+h1 {
+    font-size: 54px;
+    color: blueviolet;
+}
+
+h2 {
+    font-size: 42px;
+    color: lightseagreen;
+}
+
+h3 {
+    font-size: 28px;
+    color: lightseagreen;
+}
+
+h4 {
+    font-size: 20px;
+    color: lightseagreen;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+p {
+    margin: 20px 0;
+    color: lightseagreen;
+    line-height: 24px;
+}
+
+img {
+    margin: 20px 0;
+    width: 100%;
+}
+
+button {
+    outline: none;
+    border: none;
+    margin 18px 0;
+    padding: 20px 40px;
+    background: blue;
+    font-family: Roboto;
+    color: purple;
+    letter-spacing: 2px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+i {
+    font-size: 42px;
+    letter-spacing: 14px;
+}
+
+/*fixed navigation*/
+
+nav {
+    height: 60px;
+    width: 100%;
+    background-color: rgb(99, 98, 98);
+    position: fixed;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    float: left;
+}
+
+nav a {
+    display: inline-block;
+    width: 100px;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px 0;
+    color: lightseagreen;
+    transition: ls;
+}
+
+nav a:hover {
+    color: white;
+}
+
+nav a#toggle-button {
+    display: none;
+
+}
+
+@media screen and (max-width: 580px) {
+    nav {
+        height: auto;
+        border-bottom: 0;
+    }
+
+    nav ul {
+        display: none;
+        height: auto;
+    }
+
+    nav li {
+        width: 100%;
+        float: left;
+        position: relative;
+    }
+
+    nav a {
+        text-align: left;
+        width: 100%;
+        text-indent: 25px;
+        background: black;
+        color: lightseagreen;
+    }
+
+    nav a:hover {
+        color: white;
+    }
+
+    nav a#toggle-button:after {
+        content: "|||";
+        transform: rotate(-90deg);
+        width: 40px;
+        height: 40px;
+        display: inline-block;
+        right: 5px;
+        top: 20px;
+    }
+}
