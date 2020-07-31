@@ -65,7 +65,7 @@ button {
     border: none;
     margin 18px 0;
     padding: 20px 40px;
-    background: yellow;
+    background: goldenrod;
     font-family: Roboto;
     color: lightseagreen;
     letter-spacing: 2px;
@@ -121,7 +121,7 @@ nav a#toggle-btn {
 
 @media screen and (max-width: 580px) {
     /*note: menu capabilities depend on display (none/inline-block/block/table)
-        and position (relative/absolute)
+        and position (relative/absolute) and js elements
     */
     
     nav {
@@ -250,19 +250,62 @@ nav a#toggle-btn {
     margin-bottom: 2em;
 }
 
+/*projects section*/
 
+#projects {
+    background: cream;
+    padding: 8em 0;
+    
+}
 
+.projects-content {
+    display: grid;
+    grid-gap: 80px;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: left;
+}
 
+@media screen and (max-width: 580px) {
+    .projects-content {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(1, 1fr);
+        text-align: left;
+    }
+}
 
+/*contact section*/
 
+#contact {
+    background: lightblue;
+    padding: 8em 0;
+}
 
+#contact h2 {
+    color: lightseagreen;
+}
 
+.contact-content {
+    display: grid;
+    grid-gap: 80px;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: left;
+}
 
+/*footer*/
 
+footer {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1em 0;
+    background: darkgray;
+}
 
-
-
-
+footer span {
+    color: black;
+    font-weight: 600;
+}
 
 
 

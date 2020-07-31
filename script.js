@@ -1,11 +1,15 @@
+// script.js Heather Dinh
+
 $(function() {
       menu = $('nav ul');
 
+    //prevents whatever happened before and displays the nav bar with a sliding motion
       $('#toggle-btn').on('click', function(e) {
             e.preventDefault();
             menu.slideToggle();
       });
 
+    // if window is expanded past mobile, displays static bar again
       $(window).resize(function() {
             var w = $(this).width();
             if(w > 580 && menu.is(':hidden')) {
@@ -13,11 +17,51 @@ $(function() {
             }
       });
 
+    // closes the dropdown when a section is clicked on
       $('nav li').on('click', function(e) {
             var w = $(window).width();
             if(w < 580) {
                   menu.slideToggle();
             }
       });
+    
       $('.open-menu').height($(window).height());
 });
+
+/*smooth scrolling from css-tricks.com*/
+
+// select all href that have a # hash
+$('a[href*="#"]')
+  // remove nonlinking elements that have the # hash
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  
+  // on-page links
+  .click(function(event) {
+    if(location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+        // figure out which element to scroll to
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+        
+        //does this target exist
+        if(target.length) {
+            event.preventDefault();
+            $('html, body').animate({
+                scrollTop: target.offset().top
+            }, 1000, function() {
+                //callback after the animation to the target
+                //change the focus to that part of the page
+                var $target = $(target);
+                $target.focus();
+                //finally check if the target was focused
+                if($target.is(":focus")) {
+                    return false;
+                }else {
+                    $target.attr('tabindex', '-1');
+                    $target.focus();
+                };
+            });
+        }
+    }
+});
+
