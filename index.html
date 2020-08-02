@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Heather Dinh's Website</title>
+        <title>Heather Dinh</title>
         <link rel="stylesheet" href="style.css">
 
         <!--google fonts-->
@@ -22,11 +22,11 @@
         <header>
             <nav class="menu">
                 <ul class="menu">
-                    <li><a href="#home" class="home_active">Home</a></li>
-                    <li><a href="#about" class="about_active">About</a></li>
-                    <li><a href="#resume" class="resume_active">Resume</a></li>
-                    <li><a href="#projects" class="resume_active">Projects</a></li>
-                    <li><a href="#contact" class="contact_active">Contact</a></li>
+                    <li><a href="#home" class="active" id="home_link">Home</a></li>
+                    <li><a href="#about" id="about_link">About</a></li>
+                    <li><a href="#resume" id="resume_link">Resume</a></li>
+                    <li><a href="#projects" id="projects_link">Projects</a></li>
+                    <li><a href="#contact" id="contact_link">Contact</a></li>
                 </ul>
                 <a href="#" id="toggle-btn">HD</a>
             </nav>
@@ -55,9 +55,7 @@
                     <div>
                         <h2>About</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vulputate imperdiet turpis vitae suscipit. Donec nec faucibus nul. </p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Maecenas vulputate imperdiet turpis vitae suscipit. Donec nec faucibus null.</p>
-                        <button type="button"> Learn more</button>
-                        
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Maecenas vulputate imperdiet turpis vitae suscipit. Donec nec faucibus null.</p>                        
                     </div>
                     
                     <div>
@@ -70,9 +68,11 @@
         <!--resume section-->
         <div id="resume" class="section">
             <div class="container">
-                <h2><i class="fa fa-bolt"></i>Resume</h2>
-                <h3>A look into my life</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vulputate imperdiet turpis vitae suscipit.Donec nec faucibus nulla.</p>
+                <div class="resume-content">
+                    <h2><i class="fa fa-bolt"></i>Resume</h2>
+                    <h3>A look into my life</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vulputate imperdiet turpis vitae suscipit.Donec nec faucibus nulla.</p>
+                </div>
             </div>
         
         </div>

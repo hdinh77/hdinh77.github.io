@@ -65,52 +65,48 @@ $('a[href*="#"]')
     }
 });
 
-/*change color of nav text as scrolling down*/
-/*
-$(document).ready(function(){
-    var scroll_pos = 0;
-    var home_pos = $(".home-content").scrollTop();
-    var about_pos = $(".about-content").scrollTop() + $(".section-hero").height();
-    var resume_pos = $(".resume-content").scrollTop() + $(".about-content").height();
-    var projects_pos = $(".projects-content").scrollTop() + $(".resume-content").height();
-    var contact_pos = $(".contact-content").scrollTop() + $(".projects-content").height();
-    
-    $(document).scroll(function(){
-       scroll_pos = $(this).scrollTop();
-        if(scroll_pos > home_pos && scroll_pos < about_pos) {
-            $("nav a.home_active").css('color', 'blue');
-        }else {
-            $("nav a.home_active").css('color', 'white');
-        }
-        
-        if(scroll_pos > about_pos && scroll_pos < resume_pos) {
-            $("nav a.about_active").css('color', 'blue');
-        }else {
-            $("nav a.about_active").css('color', 'white');
-        }
-        
-        if(scroll_pos > resume_pos && scroll_pos < projects_pos) {
-            $("nav a.resume_active").css('color', 'blue');
-        }else {
-            $("nav a.resume_active").css('color', 'white');
-        }
-        
-        if(scroll_pos > projects_pos && scroll_pos < contact_pos) {
-            $("nav a.projects_active").css('color', 'blue');
-        }else {
-            $("nav a.projects_active").css('color', 'white');
-        }
-        
-        
-        if(scroll_pos > contact_pos) {
-            $("nav a.contact_active").css('color', 'blue');
-        }else {
-            $("nav a.contact_active").css('color', 'white');
-        }
-        
-        
+/*nav bar*/
+
+$(document).ready(function() {
+    /*change color of nav text when click on link*/
+
+    var clicked = 0;
+    $('nav li a').click(function() {
+        $('nav li a').removeClass();
+        $($(this)).addClass('active');
+        clicked = 1;
     });
     
+    if(clicked != 1) {
+    /*change active nav class as scrolling down*/
+
+    var scroll_pos = 0;
+    var about_pos = $("#about").position();
+    var resume_pos = $("#resume").position();
+    var projects_pos = $("#projects").position();
+    var contact_pos = $("#contact").position();
     
+    $(document).scroll(function() {
+       scroll_pos = $(this).scrollTop();   
+        
+        if(scroll_pos >= 0 && scroll_pos < about_pos.top - 1) {
+            $('nav li a').removeClass();
+            $('#home_link').addClass('active');
+        }else if(scroll_pos >= about_pos.top && scroll_pos < resume_pos.top - 1) {
+            $('nav li a').removeClass();
+            $('#about_link').addClass('active');
+        }else if(scroll_pos >= resume_pos.top - 1 && scroll_pos < projects_pos.top - 1) {
+            $('nav li a').removeClass();
+            $('#resume_link').addClass('active');
+        }else if($(this).scrollTop() + $(window).height() + 20 >= $(document).height()) {
+            $('nav li a').removeClass();
+            $('#contact_link').addClass('active');
+        }else if(scroll_pos >= projects_pos.top - 1) {
+            $('nav li a').removeClass();
+            $('#projects_link').addClass('active');
+        }
+    });
+    
+    }
 });
-*/
+
