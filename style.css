@@ -4,13 +4,19 @@
 body {
     font-family: Roboto;
     margin: 0;
+    background-repeat: no-repeat;
+    /*
+    background-image: linear-gradient(to bottom right, darkviolet, lightseagreen);
+    background-attachment: fixed;
+    */
 }
 
 .container {
     max-width: 1200px;
     text-align: center;
-    margin: 0 auto;
-    padding: 0 3rem;
+    margin: 0;
+    margin-right: 0;
+    padding: 0 3em;
 }
 
 @media screen and (max-width: 580px) {
@@ -27,8 +33,9 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 54px;
+    font-size: 70px;
     color: white;
+    opacity: 0;
 }
 
 h2 {
@@ -48,6 +55,12 @@ h4 {
     margin-bottom: 0;
 }
 
+#top_title {
+    font-size: 28px;
+    color: lightseagreen;
+    opacity: 0;
+}
+
 p {
     margin: 20px 0;
     color: lightseagreen;
@@ -64,13 +77,26 @@ i {
     letter-spacing: 14px;
 }
 
+#arrow {
+    color: white;
+    opacity: 0;
+    position: absolute;
+    bottom: 5vh;
+    right: 5vh;
+}
+
+.divider {
+    height: 10vh;
+    width: 100%;
+}
+
 /*fixed navigation bar*/
 
 nav {
     height: 60px;
     width: 100%;
     background-color: black;
-    opacity: 0.7;
+    opacity: 0;
     position: fixed;
 }
 
@@ -92,7 +118,7 @@ nav a {
     text-decoration: none;
     padding: 20px 0;
     color: white;
-    transition: 1s;
+    transition: 0.2s;
 }
 
 nav a:hover {
@@ -101,6 +127,7 @@ nav a:hover {
 
 .active {
     color: lightseagreen;
+    transition: 0.2s;
 }
 
 nav a#toggle-btn {
@@ -186,6 +213,7 @@ nav a#toggle-btn {
     padding: 0;
     overflow-y: hidden;
     background-image: linear-gradient(to bottom right, darkviolet, lightseagreen);
+    background-attachment: fixed;
 }
 
 .section-hero .container {
@@ -209,7 +237,7 @@ nav a#toggle-btn {
 
 /*about section*/
 #about {
-    background: cream;
+    background-color: white;
     padding: 8rem 0;
 }
 
@@ -222,6 +250,10 @@ nav a#toggle-btn {
 }
 
 @media screen and (max-width: 580px) {
+    h1 {
+        font-size: 44px;
+    }
+    
     .about-content {
         display: grid;
         grid-gap: 20px;
@@ -233,6 +265,7 @@ nav a#toggle-btn {
 /*resume section*/ 
 #resume {
     padding: 8rem 0;
+    background-color: white;
 }
 
 #resume h2 {
@@ -246,9 +279,8 @@ nav a#toggle-btn {
 /*projects section*/
 
 #projects {
-    background: cream;
-    padding: 8em 0;
-    
+    padding: 8rem 0;
+    background-color: white;
 }
 
 .projects-content {
@@ -275,7 +307,8 @@ nav a#toggle-btn {
 }
 
 #contact {
-    background-image: linear-gradient(to bottom right, lightseagreen, darkviolet);
+    background-image: linear-gradient(to bottom right, darkviolet, lightseagreen);
+    background-attachment: fixed;
     padding: 8em 0;
 }
 
@@ -302,19 +335,10 @@ nav a#toggle-btn {
     color: lightseagreen;
 }
 
-/*footer*/
-
-footer {
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
-    padding: 1em 0;
-    background: darkgray;
-}
-
-footer span {
-    color: black;
-    font-weight: 600;
+#credits {
+    font-size: 12px;
+    color: darkslategray;
+    text-align: right;
 }
 
 

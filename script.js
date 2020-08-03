@@ -1,5 +1,23 @@
 // script.js Heather Dinh
 
+/*fade in text*/
+$(document).ready(function() {
+    $('#top_title').fadeTo(1500, 1);
+    $('h1').delay(1500).fadeTo(1800, 1);
+    $('nav').delay(2000).fadeTo(800, 0.7);
+    $('#arrow').delay(2000).fadeTo(800, 1);
+});
+
+
+/*blinking animation*/
+function blink_text() {
+    $('.blink').fadeOut(750);
+    $('.blink').fadeIn(750);
+}
+
+setInterval(blink_text, 1000);
+
+/*nav bar dropdown*/
 $(function() {
       menu = $('nav ul');
 
@@ -48,7 +66,7 @@ $('a[href*="#"]')
             event.preventDefault();
             $('html, body').animate({
                 scrollTop: target.offset().top
-            }, 1000, function() {
+            }, 750, function() {
                 //callback after the animation to the target
                 //change the focus to that part of the page
                 var $target = $(target);
@@ -67,19 +85,19 @@ $('a[href*="#"]')
 
 /*nav bar*/
 
+/*change color of nav text when click on link*/
+/*
 $(document).ready(function() {
-    /*change color of nav text when click on link*/
-
-    var clicked = 0;
     $('nav li a').click(function() {
         $('nav li a').removeClass();
         $($(this)).addClass('active');
-        clicked = 1;
     });
-    
-    if(clicked != 1) {
-    /*change active nav class as scrolling down*/
+});
+*/
 
+/*change active nav class as scrolling down*/    
+
+$(document).ready(function() {
     var scroll_pos = 0;
     var about_pos = $("#about").position();
     var resume_pos = $("#resume").position();
@@ -92,7 +110,7 @@ $(document).ready(function() {
         if(scroll_pos >= 0 && scroll_pos < about_pos.top - 1) {
             $('nav li a').removeClass();
             $('#home_link').addClass('active');
-        }else if(scroll_pos >= about_pos.top && scroll_pos < resume_pos.top - 1) {
+        }else if(scroll_pos >= about_pos.top - 1 && scroll_pos < resume_pos.top - 1) {
             $('nav li a').removeClass();
             $('#about_link').addClass('active');
         }else if(scroll_pos >= resume_pos.top - 1 && scroll_pos < projects_pos.top - 1) {
@@ -107,6 +125,5 @@ $(document).ready(function() {
         }
     });
     
-    }
+    
 });
-
