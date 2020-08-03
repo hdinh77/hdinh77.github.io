@@ -50,7 +50,7 @@ h3 {
 
 h4 {
     font-size: 20px;
-    color: lightseagreen;
+    color: white;
     font-weight: 400;
     margin-bottom: 0;
 }
@@ -72,9 +72,15 @@ img {
     width: 100%;
 }
 
+a {
+    text-decoration: none;
+}
+
 i {
     font-size: 42px;
     letter-spacing: 14px;
+    position: relative;
+    z-index: 0;
 }
 
 #arrow {
@@ -85,9 +91,10 @@ i {
     right: 5vh;
 }
 
-.divider {
-    height: 10vh;
-    width: 100%;
+
+.section {
+    outline: none;
+    
 }
 
 /*fixed navigation bar*/
@@ -98,6 +105,7 @@ nav {
     background-color: black;
     opacity: 0;
     position: fixed;
+    z-index: 1;
 }
 
 nav ul {
@@ -286,8 +294,37 @@ nav a#toggle-btn {
 .projects-content {
     display: grid;
     grid-gap: 80px;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     text-align: left;
+}
+
+.project-img {
+    height: 45vh;
+    width: 45vh;
+    margin: auto;
+    box-shadow: 0 0 10px #ccc;
+    position: relative;
+}
+
+#text-img {
+    margin: 0;
+    color: white;
+    opacity: 0;
+    text-align: center;
+    height: 45vh;
+    transition: 0.3s;
+}
+
+#tech-icon {
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+}
+
+.projects-content .project-img #text-img:hover {
+    background-color: rgba(0, 0, 200, 0.2);
+    transition: 0.3s;
+    opacity: 1;
 }
 
 @media screen and (max-width: 580px) {
@@ -296,6 +333,17 @@ nav a#toggle-btn {
         grid-gap: 20px;
         grid-template-columns: repeat(1, 1fr);
         text-align: left;
+    }
+    
+    .project-img {
+        height: 40vh;
+        width: 40vh;
+    }
+    
+    #text-img {
+        background-color: rgba(0, 0, 0, 0.2);
+        opacity: 1;
+        height: 40vh;
     }
 }
 
@@ -339,6 +387,7 @@ nav a#toggle-btn {
     font-size: 12px;
     color: darkslategray;
     text-align: right;
+    margin: 0 0;
 }
 
 
