@@ -258,7 +258,15 @@ nav a#toggle-btn {
     grid-gap: 80px;
     grid-template-columns: repeat(2, 1fr);
     text-align: left;
-    
+}
+
+.about-content p {
+    font-size: 15px;
+}
+
+#headshot {
+    width: 60%;
+    padding-left: 20%
 }
 
 @media screen and (max-width: 580px) {
@@ -274,10 +282,46 @@ nav a#toggle-btn {
     }
 }
 
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted darkviolet;
+    font-size: 14px;
+}
+
+
+
+.tooltip .tooltip-text {
+    visibility: hidden;
+    width: 30vw;
+    height: 15vh;
+    background-color: black;
+    opacity: 0.7;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    bottom: 130%;
+    margin-left: -15vh;
+    font-size: 12px; 
+}
+
+/*
+.tooltip:hover .tooltip-text{
+    visibility: visible;
+}
+*/
+
+
 /*resume section*/ 
 #resume {
     padding: 8rem 0;
-    background-color: white;
+    background-image: url(https://cdn.pixabay.com/photo/2020/07/05/09/23/waves-5372293_1280.jpg);
+    background-attachment: fixed;
+    opacity: 0.9;
 }
 
 #resume h2 {
@@ -286,7 +330,43 @@ nav a#toggle-btn {
     font-size: 14px;
     letter-spacing: 12px;
     margin-bottom: 2em;
+    color: black;
+    font-weight: 1000;
 }
+
+#resume h3 {
+    color: black;
+    font-weight: 400;
+}
+
+#pdf {
+    background-color: darkviolet;
+    color: white;
+    font-weight: 500;
+    border-radius: 8px;
+    width: 20vw;
+    height: 10vh;
+    font-size: 20px;
+    opacity: 0.6;
+    outline: none;
+    cursor: pointer;
+}
+
+#pdf:hover {
+    opacity: 0.8;
+}
+
+#pdf:visited {
+    color: white;
+}
+
+@media screen and (max-width: 580px) {
+    #pdf {
+        width: 40vw;
+    }   
+    
+}
+
 
 /*projects section*/
 
@@ -304,10 +384,12 @@ nav a#toggle-btn {
 
 .project-img {
     height: 45vh;
-    width: 45vh;
+    width: 50vh;
     margin: auto;
     box-shadow: 0 0 10px #ccc;
     position: relative;
+    background-size: 100% 100%; 
+    background-repeat: no-repeat;
 }
 
 #text-img {
@@ -317,6 +399,12 @@ nav a#toggle-btn {
     text-align: center;
     height: 45vh;
     transition: 0.3s;
+}
+
+#text-img span {
+    font-size: 24px;
+    text-decoration: underline;
+    text-decoration-color: darkviolet;
 }
 
 #tech-icon {
@@ -341,11 +429,13 @@ nav a#toggle-btn {
     
     .project-img {
         height: 40vh;
-        width: 40vh;
+        width: 60vh;
+        background-size: 100% 100%; 
+        background-repeat: no-repeat;
     }
     
     #text-img {
-        background-color: rgba(0, 0, 0, 0.2);
+        background-color: rgba(0, 0, 200, 0.2);
         opacity: 1;
         height: 40vh;
     }

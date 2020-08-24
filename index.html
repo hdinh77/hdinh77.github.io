@@ -15,7 +15,7 @@
         
         <!--font awesome icons-->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="https://kit.fontawesome.com/858accf3f3.js" crossorigin="anonymous"></script>
+        
 
     </head>
 
@@ -40,7 +40,6 @@
                 <h2 id="top_title">Hi, I'm</h2><br>
                 <h1><i class="fa fa-terminal blink" aria-hidden="true" color="white"></i>Heather Dinh</h1><br>
                 <a href="#about">
-                    <h4>** website currently under construction **</h4>
                     <i class="fa fa-angle-double-down fa-3x" aria-hidden="true" id="arrow"></i></a>
             </div>
         </div>
@@ -51,32 +50,23 @@
                 <div class="about-content">
                     <div>
                         <h2>About</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vulputate imperdiet turpis vitae suscipit. Donec nec faucibus nul. </p>
+                        <p>Hi, my name is Heather and I am a second year Computer Science student at the University of California, Santa Barbara. I am highly motivated and determined, and my biggest passion is discovering new hobbies that I enjoy and obsessively working to improve my skills. Whether it be delving into areas of software I've never encountered before (always with Stack Overflow open in another tab), absorbing an overwhelming amount of networking advice, or even finding a new way to bake banana bread, I am always eager to learn! </p>
                         
-                        <p>Here I can put a bunch of pictures/icons of hobbies that I have</p>
-                            <ul>
-                                <li>sports: basketball, volleyball, tennis, weight lifting</li>
-                                <li>music: piano, guitar</li>
-                                <li>reading</li>
-                                <li>coding lol</li>
-                            </ul>
-                    
-                        <p>
-                            <i class="fas fa-basketball-ball" aria-hidden="true" id="bball"></i>
-                            
-                            <i class="fas fa-volleyball-ball" aria-hidden="true"></i>
-
-                            <i class="fas fa-dumbbell" aria-hidden="true"></i>
-
-                            <i class="fas fa-guitar" aria-hidden="true"></i>
-
-                            <i class="fas fa-book" aria-hidden="true"></i>
-                        </p>
+                        <p>I have experience developing web applications with HTML, CSS, and jQuery, as well as designing object oriented programs/algorithms in C++. Currently, I'm an aspiring software engineer looking for internship opportunities where I can obtain real world experience in the tech industry during the summer of 2021. </p>
+                        
+                        <p>Aside from academic and professional experiences, I love being involved with computer science education and supporting other women in tech. I am currently the Treasurer for UCSB's chapter of the Society of Women Engineers (encouraging women to explore the engineering industry, as well as outreach to show younger kids how fun engineering can be!), and was previously an Undergraduate Learning Assistant for an intermediate programming course at UCSB (Intro to C++, assisted during lab hours to give students a better understanding of the core principles of data structures and algorithms), and a Code Educator for Robotics and Things (introduced students to web development and helped them build their own exciting website). </p>
+                        
                     </div>
                     
                     
                     <div>
-                        <img src="https://picjumbo.com/wp-content/uploads/DSC04012-1080x720.jpg" alt="">
+                        <img id="headshot" src="images/headshot.jpg" alt="">
+                        <p>As mentioned before, I love picking up new hobbies! Here's a list of my many interests...</p>
+                            <ul style="color: lightseagreen; list-style-type: square;">
+                                <li>Athletics: <span class="tooltip">Basketball<span class="tooltip-text">Although I played only one year in high school at small forward, I loved every minute, from the high intensity games to the team bonding activities. I still continue to practice my jump shots, and am an avid Laker fan!<br><br>Achievements: Most Improved Player 2018, 2nd Place Burbank Tournament 2018</span></span>, <span class="tooltip">Volleyball<span class="tooltip-text">As a varsity outside and middle hitter for three years, volleyball has pushed me to always give 110% and be dedicated to my team. It really ignited a competitiveness in me and built my confidence in skills that I worked to improve everyday.<br><br>Achievements: Coaches Award 2019, Top Scholar Athlete 2019</span></span>, <span class="tooltip">Tennis<span class="tooltip-text">Tennis is a sport that I recently have become obsessed with! Even though I could barely hit the ball in the beginning, I'm proud of the long way I've come since then. Now I can confidently return forehand and backhand with spin, but I'm still working on getting my serves in ;).</span></span>, <span class="tooltip">Weight Lifting<span class="tooltip-text">Whether it be in the classroom or in the gym, I have a passion for pushing my limits and watching myself become stronger as a result of consistent and dedicated work. After high school, I began lifting weights and absolutely fell in love! Today, I still focus on perfecting my form, whether it be squats, pullups, or even deadlifts!</span></span></li>
+                                <li>Music: <span class="tooltip">Piano<span class="tooltip-text">I have played piano since I was 6 years old.</span></span>, <span class="tooltip">Guitar (Electric and Acoustic)<span class="tooltip-text">Over the years, I've dabbled with </span></span></li>
+                                <li>Miscellaneous: <span class="tooltip">Boogie Boarding / Surfing<span class="tooltip-text">Starting to learn at school</span></span>, <span class="tooltip">Longboarding<span class="tooltip-text">Really fun way to get to class or just ride through town</span></span>, <span class="tooltip">Baking<span class="tooltip-text">I've baked 12 loaves of banana bread this summer. I think that says enough :).</span></span>,  <span class="tooltip">Reading<span class="tooltip-text">I've been reading more recently</span></span></li>
+                            </ul>                    
                     </div>
                 </div>
             </div>
@@ -88,8 +78,9 @@
             <div class="container">
                 <div class="resume-content">
                     <h2><i class="fa fa-bolt"></i>Resume<i class="fa fa-bolt"></i></h2>
-                    <h3>A look into my life</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vulputate imperdiet turpis vitae suscipit.Donec nec faucibus nulla.</p>
+                    <h3>A look into my experiences</h3>
+                    <br>
+                    <a href="images/Resume%20-%20Heather%20Dinh.pdf" target="_blank"><button id="pdf">hdinh-resume.pdf</button></a>
                 </div>
             </div>
         
@@ -101,25 +92,24 @@
                 <h2>Projects</h2>
                 <br><br>
                 <div class="projects-content">
-                    <div class="project-img" style="background-image: url(https://cdn.pixabay.com/photo/2020/07/05/09/23/waves-5372293_1280.jpg);">
-                        <a href="https://github.com/hdinh77">
-                            <p id="text-img">First project text
-                                <i id="tech-icon" class="fa fa-fire"></i>
+                    <div class="project-img" style="background-image: url(images/heat.JPG);">
+                        <a href="https://github.com/hdinh77/heat-text-editor">
+                            <p id="text-img"><br><span>Heat - a text editor</span><br><br>A text editor created from scratch in C, with syntax highlighting, new file creation, and file saving features.
+                                <i id="tech-icon" class="fa fa-github"></i>
                             </p>
                         </a>
                         
                     </div>
-                    <div class="project-img" style="background-image: url(https://cdn.pixabay.com/photo/2020/07/05/09/23/waves-5372293_1280.jpg);">
-                        <a href="https://github.com/hdinh77">
-                            <p id="text-img">Second project text</p>
+                    <div class="project-img" style="background-image: url(images/search-engine.JPG);">
+                        <a href="https://github.com/hdinh77/file-search-engine">
+                            <p id="text-img"><br><span>File Search Engine </span><br><br>A program to parse through files and find words that occur a certain amount of times, and find files that contain two inputted words.<i id="tech-icon" class="fa fa-github"></i></p>
                         </a>
                     </div>
                     <div class="project-img" style="background-image: url(https://cdn.pixabay.com/photo/2020/07/05/09/23/waves-5372293_1280.jpg);">
                         <a href="https://github.com/hdinh77">
-                            <p id="text-img">Third project text</p>
+                            <p id="text-img"><br><span>Project TBA</span><br><br>Project TBA<i id="tech-icon" class="fa fa-github"></i></p>
                         </a>
                     </div>
-                    
                 </div>
             </div>
         </div>
