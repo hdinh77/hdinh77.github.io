@@ -320,10 +320,11 @@ nav a#toggle-btn {
 /*resume section*/ 
 #resume {
     padding: 8rem 0;
-    background-image: url(https://cdn.pixabay.com/photo/2020/07/05/09/23/waves-5372293_1280.jpg);
+    background-image: url(images/ocean.jpg);
     background-attachment: fixed;
     opacity: 0.9;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #resume h2 {
@@ -367,6 +368,13 @@ nav a#toggle-btn {
         width: 50vw;
         height: 8vh;
     }   
+    
+    #resume {
+        background-image: url(images/ocean.jpg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
     
 }
 
