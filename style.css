@@ -5,6 +5,7 @@ body {
     font-family: Roboto;
     margin: 0;
     background-repeat: no-repeat;
+    overflow-x: hidden;
     /*
     background-image: linear-gradient(to bottom right, darkviolet, lightseagreen);
     background-attachment: fixed;
@@ -447,10 +448,15 @@ nav a#toggle-btn {
     }
     
     #text-img {
-        background-color: rgba(0, 0, 200, 0.2);
+        background-color: rgba(0, 0, 200, 0.1);
         opacity: 1;
         height: 30vh;
         width: 75vw;
+        visibility: hidden;
+    }
+    
+    #text-img span {
+        visibility: visible;
     }
 }
 
