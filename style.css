@@ -382,9 +382,7 @@ nav a#toggle-btn {
 @supports (-webkit-touch-callout: none) {
     /* CSS specific to iOS devices */ 
     #resume {
-        background-image: url(images/ocean2.jpg);
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
+        background-image: linear-gradient(to bottom right, darkviolet, lightseagreen);
     }
   }
 
@@ -610,6 +608,10 @@ nav a#toggle-btn {
         width: 30vw;
         height: 8vh;
         font-size: 15px;
+    }
+
+    #resume {
+        background-image: linear-gradient(to bottom right, darkviolet, lightseagreen);
     }
 }
 
