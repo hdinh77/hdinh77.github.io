@@ -364,6 +364,21 @@ nav a#toggle-btn {
     color: white;
 }
 
+@media only screen and (min-width: 414px) and (max-width: 767px) {
+    #pdf {
+        width: 50vw;
+        height: 8vh;
+        font-size: 14px;
+    }   
+    
+    #resume {
+        background-image: url(images/ocean.jpg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
 @media screen and (max-width: 580px) {
     #pdf {
         width: 50vw;
@@ -379,6 +394,8 @@ nav a#toggle-btn {
     }
     
 }
+
+
 
 
 /*projects section*/
