@@ -364,15 +364,6 @@ nav a#toggle-btn {
     color: white;
 }
 
-@supports (-webkit-touch-callout: none) {
-    /* CSS specific to iOS devices */ 
-    #resume {
-        background-image: url(images/ocean2.jpg);
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-    }
-  }
-
 @media screen and (max-width: 580px) {
     #pdf {
         width: 50vw;
@@ -385,11 +376,17 @@ nav a#toggle-btn {
         background-attachment: fixed;
         background-repeat: no-repeat;
         background-size: cover;
-    }
-    
+    }   
 }
 
-
+@supports (-webkit-touch-callout: none) {
+    /* CSS specific to iOS devices */ 
+    #resume {
+        background-image: url(images/ocean2.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+  }
 
 
 /*projects section*/
