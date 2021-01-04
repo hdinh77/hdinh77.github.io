@@ -48,28 +48,49 @@
         
         <!--about section-->
         <div id="about" class="section">
-            <div class="container">
+            <div class="container" style="text-align: left">
+                <h2>About</h2>
+                <p>Hi, my name is Heather and I am a second year Computer Science student at the 
+                    University of California, Santa Barbara. I am highly motivated and determined, 
+                    and my biggest passion is discovering new hobbies that I enjoy and obsessively 
+                    working to improve my skills. Whether it be delving into areas of software I've 
+                    never encountered before (always with Stack Overflow open in another tab), absorbing 
+                    an overwhelming amount of networking advice, or even finding a new way to bake 
+                    banana bread, I am always eager to learn! </p>
                 <div class="about-content">
                     <div>
-                        <h2>About</h2>
-                        <p>Hi, my name is Heather and I am a second year Computer Science student at the University of California, Santa Barbara. I am highly motivated and determined, and my biggest passion is discovering new hobbies that I enjoy and obsessively working to improve my skills. Whether it be delving into areas of software I've never encountered before (always with Stack Overflow open in another tab), absorbing an overwhelming amount of networking advice, or even finding a new way to bake banana bread, I am always eager to learn! </p>
                         
-                        <p>I have experience developing web applications with ReactJS, Node, and Express, as well as designing object oriented programs/algorithms in Java and C++. Currently, I'm an aspiring software engineer looking for internship opportunities where I can obtain real world experience in the tech industry during the summer of 2021. </p>
                         
-                        <p>Aside from academic and professional experiences, I love being involved with computer science education and supporting other women in tech. I am currently the Treasurer for UCSB's chapter of the Society of Women Engineers (encouraging women to explore the engineering industry, as well as outreach to show younger kids how fun engineering can be!), and was previously an Undergraduate Learning Assistant for an intermediate programming course at UCSB (Intro to C++, assisted during lab hours to give students a better understanding of the core principles of data structures and algorithms), and a Code Educator for Robotics and Things (introduced students to web development and helped them build their own exciting website). </p>
+                        <p>Currently, I am an Undergraduate Researcher at the Washburn Lab in UCSB's Marine Science Institute.
+                            As a developer, I'm building a more mobile-friendly web application to display vector overlays
+                            of ocean currents and manipulate map features for field researchers across the nation. In
+                            addition, I am a part of the Avionic Team of the Rocket Propulsion Laboratory at UCSB. My
+                            projects include a native desktop GUI application that will allow users to view and send commands 
+                            to the rocket, such as altering the state of the actuators.
+                            In the future, I will be a Software Engineer Intern at ServiceNow for the summer of 2021!</p>
+                        
+                        <p>Aside from academic and professional experiences, I love being involved with computer science 
+                            education and supporting other women in tech. I am currently serving as the Treasurer for UCSB's 
+                            chapter of the Society of Women Engineers (encouraging women to explore the engineering 
+                            industry, as well as outreach to show younger kids how fun engineering can be!), and was 
+                            previously an Undergraduate Learning Assistant for an intermediate programming course at 
+                            UCSB (Intro to C++, assisted during lab hours to give students a better understanding of 
+                            the core principles of data structures and algorithms).</p>
+
+                        <p>As mentioned before, I love picking up new hobbies! I enjoy longboarding, playing sports 
+                            (tennis, basketball, volleyball), playing music (piano, guitar), and baking the occasional banana bread. 
+                        </p>
                         
                     </div>
                     
                     
                     <div>
-                        
                         <img id="headshot" src="images/headshot.jpg" alt="">
-                        <p>As mentioned before, I love picking up new hobbies! Here's a list of my interests...</p>
-                            <ul style="color: lightseagreen; list-style-type: square;">
-                                <li>Athletics: <span class="tooltip">Basketball<span class="tooltip-text">Although I played only one year in high school at small forward, I loved every minute, from the high intensity games to the team bonding activities. I still continue to practice my jump shots, and am an avid Laker fan!<br><br>Achievements: Most Improved Player 2018, 2nd Place Burbank Tournament 2018</span></span>, <span class="tooltip">Volleyball<span class="tooltip-text">As a varsity outside and middle hitter for three years, volleyball has pushed me to always give 110% and be dedicated to my team. It really ignited a competitiveness in me and built my confidence in skills that I worked to improve everyday.<br><br>Achievements: Coaches Award 2019, Top Scholar Athlete 2019</span></span>, <span class="tooltip">Tennis<span class="tooltip-text">Tennis is a sport that I recently have become obsessed with! Even though I could barely hit the ball in the beginning, I'm proud of the long way I've come since then. Now I can confidently return forehand and backhand with spin, but I'm still working on getting my serves in ;).</span></span>, <span class="tooltip">Weight Lifting<span class="tooltip-text">Whether it be in the classroom or in the gym, I have a passion for pushing my limits and watching myself become stronger as a result of consistent and dedicated work. After high school, I began lifting weights and absolutely fell in love! Today, I still focus on perfecting my form, whether it be squats, pullups, or even deadlifts!</span></span></li>
-                                <li>Music: <span class="tooltip">Piano<span class="tooltip-text">I have played piano since I was 6 years old.</span></span>, <span class="tooltip">Guitar (Electric and Acoustic)<span class="tooltip-text">Over the years, I've dabbled with </span></span></li>
-                                <li>Miscellaneous: <!--<span class="tooltip">Boogie Boarding / Surfing<span class="tooltip-text">Starting to learn at school</span></span>, --><span class="tooltip">Longboarding<span class="tooltip-text">Really fun way to get to class or just ride through town</span></span>, <span class="tooltip">Baking<span class="tooltip-text">I've baked 12 loaves of banana bread this summer. I think that says enough :).</span></span>,  <span class="tooltip">Reading<span class="tooltip-text">I've been reading more recently</span></span></li>
-                            </ul>                    
+                        <!--
+                        <h4 style="text-align: center; margin: auto 0; color: lightseagreen; ">Technical Skills: </h4>
+                        <p style="text-align: center; margin: auto 0;">JavaScript (NodeJS, React) -- HTML -- CSS
+                        <br> Java -- C++ -- C -- Python</p>        
+                        -->
                     </div>
                 </div>
             </div>
@@ -96,17 +117,26 @@
                 <h2>Projects</h2>
                 <br><br>
                 <div class="projects-content">
+                    <div class="project-img" style="background-image: url(images/tennisWeather.JPG);">
+                        <a href="https://github.com/hdinh77/tennis-weather">
+                            <p id="text-img"><br><span>Tennis Weather App</span><br><br>Application that uses ReactJS and the Open Weather API to display user location and current climate conditions suitable for playing tennis!<i id="tech-icon" class="fa fa-github"></i></p>
+                        </a>
+                    </div>
                     <div class="project-img" style="background-image: url(images/heat.JPG);">
                         <a href="https://github.com/hdinh77/heat-text-editor">
                             <p id="text-img"><br><span>Heat - a text editor</span><br><br>A text editor created from scratch in C, with syntax highlighting, new file creation, and file saving features.
                                 <i id="tech-icon" class="fa fa-github"></i>
                             </p>
                         </a>
-                        
                     </div>
-                    <div class="project-img" style="background-image: url(images/tennisWeather.JPG);">
-                        <a href="https://github.com/hdinh77/tennis-weather">
-                            <p id="text-img"><br><span>Tennis Weather App</span><br><br>Application that uses ReactJS and the Open Weather API to display user location and current climate conditions suitable for playing tennis!<i id="tech-icon" class="fa fa-github"></i></p>
+                    <div class="project-img" style="background-image: url(images/hfr-map.JPG);">
+                        <a href="https://github.com/hdinh77">
+                            <p id="text-img"><br><span>High Frequency Radar Map App (WIP)</span><br><br>Mobile-friendly web application to display vector overlays of ocean currents and manipulate map features.<i id="tech-icon" class="fa fa-github"></i></p>
+                        </a>
+                    </div>
+                    <div class="project-img" style="background-image: linear-gradient(to bottom right, darkviolet, lightseagreen);">
+                        <a href="https://github.com/hdinh77">
+                            <p id="text-img"><br><span>Rocket Controls Desktop GUI (WIP)</span><br><br>Native desktop GUI application that will allow users to view and send commands to the rocket.<i id="tech-icon" class="fa fa-github"></i></p>
                         </a>
                     </div>
                     <div class="project-img" style="background-image: url(images/search-engine.JPG);">
@@ -114,7 +144,6 @@
                             <p id="text-img"><br><span>File Search Engine </span><br><br>A program to parse through files and find words that occur a certain amount of times, and find files that contain two inputted words.<i id="tech-icon" class="fa fa-github"></i></p>
                         </a>
                     </div>
-                    
                 </div>
             </div>
         </div>
@@ -139,11 +168,6 @@
                 <p id="credits">website designed and built by me :)</p>
             </div>
         </div>
-        <!--
-        <footer>
-            <span>website created by heather dinh</span>
-        </footer>
-        -->
         <script src="script.js?id=1234"></script>
     </body>
 
