@@ -51,39 +51,34 @@
         <div id="about" class="section">
             <div class="container" style="text-align: left">
                 <h2>About</h2>
-                <p>Hi, my name is Heather and I am a second year Computer Science student at the 
+                <p>Hi, my name is Heather and I'm an incoming third year Computer Science student at the 
                     University of California, Santa Barbara. I am highly motivated and determined, 
                     and my biggest passion is discovering new hobbies that I enjoy and obsessively 
-                    working to improve my skills. Whether it be delving into areas of software I've 
-                    never encountered before (always with Stack Overflow open in another tab), absorbing 
-                    an overwhelming amount of networking advice, or even finding a new way to bake 
-                    banana bread, I am always eager to learn! </p>
+                    working to improve my skills.</p>
                 <div class="about-content">
                     <div>
                         
+                        <p>Currently, I'm a Software Engineer Intern at ServiceNow working on the backend Applications team for the
+                            summer of 2021. Along with creating a logging utility function for the backend MID servers, I learned a
+                            lot about the Agile Software Development Lifecycle from creating a design document to demoing finished
+                            functionality during sprint meetings.</p>
+
+                        <p>In addition, I am a part of the Avionics Team of the Rocket Propulsion Laboratory at UCSB. As a software developer,
+                            I lead a project that displays incoming telemetry data (such as orientation, angular velocity, altitude,
+                            and current state) on a desktop application during the flight of a Thrust Vector Controlled rocket, 
+                            implemented using ReactJS and Electron. And in the past, I worked as an Undergraduate Researcher at 
+                            the UCSB Washburn Lab where I built a mobile-friendly web application to display vector overlays
+                            of ocean currents and manipulate map features for field researchers across the nation. </p>
                         
-                        <p>Currently, I am an Undergraduate Researcher at the Washburn Lab in UCSB's Marine Science Institute.
-                            As a developer, I'm building a mobile-friendly web application to display vector overlays
-                            of ocean currents and manipulate map features for field researchers across the nation. In
-                            addition, I am a part of the Avionics Team of the Rocket Propulsion Laboratory at UCSB. My
-                            projects include a native desktop GUI application that will allow users to view and send commands 
-                            to the rocket, such as altering actuator states.
-                            In the future, I will be a Software Engineer Intern at ServiceNow for the summer of 2021!</p>
-                        
-                        <p>Aside from academic and professional experiences, I am very involved with computer science 
-                            education and supporting other women in tech. I am currently serving as the Treasurer for UCSB's 
-                            chapter of the Society of Women Engineers (encouraging women to explore the engineering 
-                            industry, and community outreach to IV elementary students as well as to other UCSB orgs), and was 
-                            previously an Undergraduate Learning Assistant for an intermediate programming course at 
-                            UCSB (Intro to C++, assisted during lab hours to give students a better understanding of 
-                            the core principles of data structures and algorithms).</p>
+                        <p>Aside from academic and professional experiences, I am very involved within the engineering community.
+                            As an active member of Theta Tau, a professional engineering fraternity, I work with the rush committee to
+                            organize events for the upcoming Fall 2021 rush. I'm also a member of the Society of Women Engineers, where I
+                            previously held a board position as the Treasurer.</p>
 
                         <p>As mentioned before, I love picking up new hobbies! I enjoy longboarding, playing sports 
-                            (tennis, basketball, volleyball), playing music (piano, guitar), and baking the occasional banana bread. 
+                            (tennis, basketball), playing guitar, and learning to surf. 
                         </p>
-                        
                     </div>
-                    
                     
                     <div>
                         <img id="headshot" src="images/headshot.jpg" alt="">
@@ -104,9 +99,9 @@
                 <div class="resume-content">
                     <h2><i class="fa fa-bolt"></i><i class="fa fa-bolt"></i></h2>
                     <!--<h3>A look into my experiences</h3>
-                    <br>
-                    <a href="images/HeatherDinh_Resume.pdf" target="_blank"><button id="pdf">HeatherDinh_Resume.pdf</button></a>
-                    -->
+                    <br>-->
+                    <a href="HeatherDinh_Resume.pdf" target="_blank"></a><!--<button id="pdf">HeatherDinh_Resume.pdf</button></a>-->
+                    
                 </div>
             </div>
         
@@ -117,7 +112,13 @@
             <div class="container">
                 <h2>Projects</h2>
                 <br><br>
+                
                 <div class="projects-content">
+                    <div class="project-img" style="background-image: url(images/tvc-telemetry.JPG);">
+                        <a href="https://github.com/hdinh77/tvc_telemetry">
+                            <p id="text-img"><br><span>TVC Telemetry Desktop Application (WIP)</span><br><br>Native desktop GUI application that processes and displays live rocket telemetry data.<i id="tech-icon" class="fa fa-github"></i></p>
+                        </a>
+                    </div>
                     <div class="project-img" style="background-image: url(images/tennisWeather.JPG);">
                         <a href="https://github.com/hdinh77/tennis-weather">
                             <p id="text-img"><br><span>Tennis Weather App</span><br><br>Application that uses ReactJS and the Open Weather API to display user location and current climate conditions suitable for playing tennis!<i id="tech-icon" class="fa fa-github"></i></p>
@@ -125,29 +126,18 @@
                     </div>
                     <div class="project-img" style="background-image: url(images/hfr-map.JPG);">
                         <a href="https://github.com/hdinh77/hfr-map-demo">
-                            <p id="text-img"><br><span>High Frequency Radar (HFR) Map App</span><br><br>Mobile-friendly web application to display vector overlays of ocean currents and manipulate map features.<i id="tech-icon" class="fa fa-github"></i></p>
-                        </a>
-                    </div>
-                    <div class="project-img" style="background-image: url(images/PRTC-1Sensor.png);">
-                        <a href="https://github.com/hdinh77">
-                            <p id="text-img"><br><span>Rocket Controls Desktop GUI (WIP)</span><br><br>Native desktop GUI application that will allow users to view and send commands to the rocket.<i id="tech-icon" class="fa fa-github"></i></p>
+                            <p id="text-img"><br><span>High Frequency Radar Map App</span><br><br>Mobile-friendly web application to show vector overlays of ocean currents and manipulate map features.<i id="tech-icon" class="fa fa-github"></i></p>
                         </a>
                     </div>
                     <div class="project-img" style="background-image: url(images/hfr-qc.JPG);">
                         <a href="https://github.com/hdinh77/hfr-baseline-site">
-                            <p id="text-img"><br><span>HFR Quality Control (WIP)</span><br><br><i id="tech-icon" class="fa fa-github"></i></p>
+                            <p id="text-img"><br><span>HFR Quality Control</span><br><br>Quality control site that compares baseline and synthetic ocean currents between two stations.<i id="tech-icon" class="fa fa-github"></i></p>
                         </a>
                     </div>
-                    <div class="project-img" style="background-image: url(images/heat.JPG);">
-                        <a href="https://github.com/hdinh77/heat-text-editor">
-                            <p id="text-img"><br><span>Heat - a text editor</span><br><br>A text editor created from scratch in C, with syntax highlighting, new file creation, and file saving features.
-                                <i id="tech-icon" class="fa fa-github"></i>
+                    <div class="project-img" style="background-image: url(images/covid.jfif);">
+                        <a href="https://github.com/hdinh77/springboot-tracker">
+                            <p id="text-img"><br><span>COVID-19 Cases Tracker</span><br><br>Java web application that tracks the number of COVID-19 cases in the US.<i id="tech-icon" class="fa fa-github"></i>
                             </p>
-                        </a>
-                    </div>
-                    <div class="project-img" style="background-image: url(images/search-engine.JPG);">
-                        <a href="https://github.com/hdinh77/file-search-engine">
-                            <p id="text-img"><br><span>File Search Engine </span><br><br>A program to parse through files and find words that occur a certain amount of times, and find files that contain two inputted words.<i id="tech-icon" class="fa fa-github"></i></p>
                         </a>
                     </div>
                 </div>
