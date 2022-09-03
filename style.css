@@ -26,7 +26,7 @@ body {
     }
 }
 
-h1, h2, h3 {
+h1, h2, h3{
     font-weight: 300;
     margin-top: 0;
     margin-bottom: 8px;
@@ -48,6 +48,7 @@ h2 {
 h3 {
     font-size: 28px;
     color: lightseagreen;
+    margin-top: 15px;
 }
 
 h4 {
@@ -64,10 +65,15 @@ h4 {
 }
 
 p {
-    margin: 20px 0;
-    color: rgb(102, 102, 102);
+    margin: 6px 0;
+    color: rgba(102, 102, 102, 0.848);
     font-weight: 405;
     line-height: 24px;
+}
+
+.company-name {
+    color: mediumpurple;
+    font-weight: 600;
 }
 
 img {
@@ -346,34 +352,16 @@ nav a#toggle-btn {
     font-weight: 400;
 }
 
-#pdf {
-    background-color: darkviolet;
+.resume-link {
     color: white;
-    font-weight: 500;
-    border-radius: 8px;
-    width: 20vw;
-    height: 10vh;
-    font-size: 20px;
-    opacity: 0.6;
-    outline: none;
-    cursor: pointer;
+    font-size: 30px;
 }
 
-#pdf:hover {
-    opacity: 0.8;
-}
-
-#pdf:visited {
-    color: white;
+.resume-link:hover {
+    color: mediumpurple;
 }
 
 @media screen and (max-width: 580px) {
-    #pdf {
-        width: 50vw;
-        height: 8vh;
-        font-size: 14px;
-    }   
-    
     #resume {
         background-image: url(images/ocean.jpg);
         background-attachment: fixed;
@@ -402,6 +390,10 @@ nav a#toggle-btn {
     grid-gap: 80px;
     grid-template-columns: repeat(3, 1fr);
     text-align: left;
+}
+
+.projects-content p {
+    margin: 20px 0;
 }
 
 .project-img {
@@ -605,12 +597,6 @@ nav a#toggle-btn {
         opacity: 1;
         height: 30vh;
         width: 45vh;
-    }
-    
-    #pdf {
-        width: 30vw;
-        height: 8vh;
-        font-size: 15px;
     }
 
     #resume {
