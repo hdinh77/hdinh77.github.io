@@ -6,18 +6,15 @@ body {
     margin: 0;
     background-repeat: no-repeat;
     overflow-x: hidden;
-    /*
-    background-image: linear-gradient(to bottom right, darkviolet, lightseagreen);
-    background-attachment: fixed;
-    */
 }
 
 .container {
-    max-width: 1200px;
+    width: 100%;
     text-align: center;
-    margin: 0;
-    margin-right: 0;
-    padding: 0 3em;
+}
+
+.description {
+    padding: 10%;
 }
 
 @media screen and (max-width: 580px) {
@@ -186,7 +183,7 @@ nav a#toggle-btn {
     }
 
     nav a:hover {
-        color: steelblue; !important;
+        color: steelblue !important;
     }
     
     .active {
@@ -498,13 +495,6 @@ nav a#toggle-btn {
     color: lightseagreen;
 }
 
-#credits {
-    font-size: 8px;
-    color: darkslategray;
-    text-align: right;
-    margin: 0 0;
-}
-
 /*------------iPad-------*/
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
     nav {
@@ -531,7 +521,7 @@ nav a#toggle-btn {
     }
 
     nav a:hover {
-        color: steelblue; !important;
+        color: steelblue !important;
     }
     
     .active {
@@ -568,6 +558,7 @@ nav a#toggle-btn {
     
     .menu {
         zoom: 1;
+        padding: 5%;
     }
 
     #resume {
